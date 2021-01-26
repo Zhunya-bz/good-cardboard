@@ -1,0 +1,59 @@
+.fabrication
+  &-wrap
+    padding-top: 87px
+    padding-bottom: 95px
+  &__text
+    position: relative
+  &__title
+    position: absolute
+    top: 20px
+    left: -55px
+    font-size: 28px
+    font-weight: 400
+    color: #ffffff
+    background-color: $orange
+    height: 62px
+    padding: 16px 185px 16px 85px
+    z-index: -1
+  &__description
+    padding-left: 25px
+    padding-top: 110px
+    font-size: 16px
+    line-height: 24px
+    font-weight: 300
+    color: $dark-color
+
+.slider
+  position: relative
+  &-top
+    height: 377px
+    overflow: hidden
+  &-arrow
+    background-image: url(../img/arrow_prev_dis.png)
+    border: 1px solid $orange
+    background-position: center
+    background-repeat: no-repeat
+    background-color: #fff
+    width: 22px
+    height: 100%
+    z-index: 5
+    position: absolute
+    top: 0
+    &_prev
+      left: 0
+    &_next
+      transform: rotate(180deg)
+      right: 0
+  &-bottom
+    margin-top: 13px
+    padding-left: 30px
+    padding-right: 30px
+    height: 78px !important
+    img
+      margin: 0 3px
+      width: 116px
+      height: 78px !important
+// .slick-active
+//   opacity: 0.5
+// .slick-current
+//   opacity: 1

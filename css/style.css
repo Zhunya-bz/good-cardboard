@@ -19,6 +19,7 @@ body {
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 input::placeholder {
@@ -428,5 +429,95 @@ input::placeholder {
   line-height: 30px;
   font-weight: 300;
   color: #ffffff;
+}
+
+.fabrication-wrap {
+  padding-top: 87px;
+  padding-bottom: 95px;
+}
+
+.fabrication__text {
+  position: relative;
+}
+
+.fabrication__title {
+  position: absolute;
+  top: 20px;
+  left: -55px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff9d00;
+  height: 62px;
+  padding: 16px 185px 16px 85px;
+  z-index: -1;
+}
+
+.fabrication__description {
+  padding-left: 25px;
+  padding-top: 110px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #373737;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-top {
+  height: 377px;
+  overflow: hidden;
+}
+
+.slider-arrow {
+  background-image: url(../img/arrow_prev_dis.png);
+  border: 1px solid #ff9d00;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  width: 22px;
+  height: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+}
+
+.slider-arrow_prev {
+  left: 0;
+}
+
+.slider-arrow_next {
+  transform: rotate(180deg);
+  right: 0;
+}
+
+.slider-bottom {
+  margin-top: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 78px !important;
+}
+
+.slider-bottom img {
+  margin: 0 3px;
+  width: 116px;
+  height: 78px !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .slider-arrow_prev:hover {
+    background-image: url(../img/arrow_next_active.png);
+    background-color: #ff9d00;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+  .slider-arrow_next:hover {
+    background-image: url(../img/arrow_next_active.png);
+    background-color: #ff9d00;
+    transform: rotate(0deg);
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=style.css.map */
